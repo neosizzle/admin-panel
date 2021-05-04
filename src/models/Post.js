@@ -10,7 +10,7 @@ const postSchema = mongoose.Schema({
         type : String,
         required : true
     },
-    avatar : {
+    picture : {
         type : Buffer
     }
 
@@ -18,6 +18,6 @@ const postSchema = mongoose.Schema({
 },{timestamps : true})
 
 //attatching task schema to task model
-const Psot = mongoose.model("Post",postSchema)
+const Post = mongoose.model("Post",postSchema)
 
 module.exports = Post
