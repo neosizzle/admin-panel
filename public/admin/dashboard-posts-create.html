@@ -29,10 +29,10 @@
           <div class=" shadow-sm rounded bg-white sidebar">
 
             <div class="list-group">
-              <a href="/admin/dashboard" class="list-group-item list-group-item-action active" aria-current="true">
+              <a href="/admin/dashboard" class="list-group-item list-group-item-action " aria-current="true">
                 <img class = "sidebar-icon" src="/admin/assets/icons/home-icon.png" alt="home-icon.png" srcset=""> Home
               </a>
-              <a href="/admin/dashboard/posts" class="list-group-item list-group-item-action">
+              <a href="/admin/dashboard/posts" class="list-group-item list-group-item-action active">
                 <img class = "sidebar-icon" src="/admin/assets/icons/posts-icon.png" alt="posts-icon.png" srcset="">
                 Posts
               </a>
@@ -48,8 +48,46 @@
 
           <div class=" shadow-sm rounded bg-white content">
 
-        bla bla bla
+            <!--content header start-->
+            <div class="row pt-5 pb-2 px-5">
+                <h2>Create new post</h2>
+            </div>
+            <!--content header end-->
+
+            <hr>
             
+            <div class="p-4 pt-2 form-container">
+                <!--post form start-->
+                <form id = "form" action="/posts" method="POST" enctype="multipart/form-data" target="_self" autocomplete="off">
+                    <div class="row">
+                        <label class="form-label">Post title</label>
+                        <input type="text" name="title" id="postTitleInput" placeholder = "Post title" class="form-control mb-3" required>
+                    </div>
+
+                    <div class="row">
+                        <label class="form-label">Post description</label>
+                        <textarea type="text" name="description" id="postDescInput" placeholder = "Post description" style ="height:10rem; resize: none;"class="form-control mb-3" requried></textarea>
+                    </div>
+
+                    <div class="row">
+                        <label class="form-label">Post picture</label>
+                        <input class="form-control form-control-sm mb-4" name="postImage" id="postPicInput" type="file" accept="image/*" required multiple>
+                    </div>
+
+                    <div class="row">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+
+                    
+                    
+                </form>
+                <!--post form end-->
+            </div>
+
+
+
+ 
+
           </div>
           
         </div>
@@ -69,6 +107,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
     -->
 
-    <!--login js-->
+  
+
   </body>
 </html>

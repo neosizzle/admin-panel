@@ -29,10 +29,10 @@
           <div class=" shadow-sm rounded bg-white sidebar">
 
             <div class="list-group">
-              <a href="/admin/dashboard" class="list-group-item list-group-item-action active" aria-current="true">
+              <a href="/admin/dashboard" class="list-group-item list-group-item-action " aria-current="true">
                 <img class = "sidebar-icon" src="/admin/assets/icons/home-icon.png" alt="home-icon.png" srcset=""> Home
               </a>
-              <a href="/admin/dashboard/posts" class="list-group-item list-group-item-action">
+              <a href="/admin/dashboard/posts" class="list-group-item list-group-item-action active">
                 <img class = "sidebar-icon" src="/admin/assets/icons/posts-icon.png" alt="posts-icon.png" srcset="">
                 Posts
               </a>
@@ -48,8 +48,51 @@
 
           <div class=" shadow-sm rounded bg-white content">
 
-        bla bla bla
-            
+            <!--content header start-->
+            <div class="row pt-5 pb-2 px-5">
+                <h2>Posts</h2>
+            </div>
+            <!--content header end-->
+
+            <hr>
+
+            <!--table start-->
+            <div class="row">
+
+                <div class="col border shadow-sm rounded m-4 p-3 table-container">
+                    <table  class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col">Post title</th>
+                            <th scope="col">Post image</th>
+                            <th scope="col">Actions</th>
+                          </tr>
+                        </thead>
+                        <tbody id = "tableBody">
+
+                        </tbody>
+                      </table>
+                </div>
+
+ 
+            </div>
+            <!--table end-->
+
+            <!--add new post start-->
+            <div class="row">
+
+                <div class="col d-flex justify-content-end">
+                    <a class = "text-decoration-none" href="/admin/dashboard/posts/create">
+                        <img class = "me-5" src="/admin/assets/icons/add-button.png" alt="add-button" srcset="" style="height: 2rem; width: 2rem;">
+                    </a>
+                </div>
+
+ 
+            </div>
+            <!--add new post end-->
+
+ 
+
           </div>
           
         </div>
@@ -69,6 +112,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
     -->
 
-    <!--login js-->
+    <!--populate table  js-->
+    <script src="/admin/js/populateTable.js"></script>
+
   </body>
 </html>

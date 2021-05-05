@@ -37,8 +37,7 @@ function getCookie(cname) {
          alert(data.Error)
          window.location.href = '/admin'
      }else{
-        alert("SUCC")
-        console.log(data)
+        console.log(`Logged in as ${data.user.username}`)
      }
  })
  .catch(
