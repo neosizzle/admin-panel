@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-//task schema
+//post schema
 const postSchema = mongoose.Schema({
     title:{
         type : String,
@@ -17,7 +17,7 @@ const postSchema = mongoose.Schema({
 
 },{timestamps : true})
 
-//attatching task schema to task model
+//attatching post schema to post model
 const Post = mongoose.model("Post",postSchema)
 
 module.exports = Post
