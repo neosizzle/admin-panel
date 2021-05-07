@@ -40,7 +40,7 @@ const userLogout = async (req, res) => {
 
         await req.user.save()
 
-        res.status(200).json({status : "OK"})
+        res.status(200).send({status : "OK"})
     }catch(e){res.status(500).send({e})}
 }
 
